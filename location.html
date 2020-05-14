@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Timothy Hotel 首頁</title>
+<title>Timothy Hotel 我們的位置</title>
 	<link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
 <link href="layout.css" rel="stylesheet" type="text/css">
 	<style>
@@ -11,6 +11,16 @@
 			background-image: url("images/banner/banner4.png");
 		}
 	</style>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			
+		});
+		function fn(){
+			$("#navs").toggleClass("hide");
+			  $("#navs").toggleClass("show");
+			  }
+	</script>
 </head>
 
 <body>
@@ -18,7 +28,8 @@
   <p>Traditionally Royal hotel</p>
 </header>
 	
-<nav> <a href="index.html">回網站首頁</a> <a href="about.html">關於蒂莫絲</a> <a href="service.html">客房的服務</a> <a href="location.html" class="active">我們的位置</a> <a href="contact.html">聯絡蒂莫絲</a> 
+<nav> <a id="tab" onClick="fn();"><i class="fas fa-bars fa-lg"></i></a><span id="navs" class="hide">
+	<a href="index.html">回網站首頁</a> <a href="about.html">關於蒂莫絲</a> <a href="service.html">客房的服務</a> <a href="location.html" class="active">我們的位置</a> <a href="contact.html">聯絡蒂莫絲</a></span> 
 	
 	</nav>
 	

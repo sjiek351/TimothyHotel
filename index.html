@@ -8,7 +8,7 @@
 <link href="layout.css" rel="stylesheet" type="text/css">
 	
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> 
+<script src="js/jquery-3.3.1.min.js"></script> 
 <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script> 
 <script>
   $(document).ready(function(){
@@ -16,6 +16,10 @@
       auto: true                 //增加參數選項 { auto:true } 可以讓 Slider 自動播放
     });
   });
+	function fn(){
+			$("#navs").toggleClass("hide");
+			  $("#navs").toggleClass("show");
+			  }
 </script>
 	<style>
 		
@@ -35,7 +39,8 @@
 <header> <img src="images/logo.png" alt="">
   <p>Traditionally Royal hotel</p>
 </header>
-<nav> <a href="index.html" class="active">回網站首頁</a> <a href="about.html">關於蒂莫絲</a> <a href="service.html">客房的服務</a> <a href="location.html">我們的位置</a> <a  href="contact.html">聯絡蒂莫絲</a> <a id="tab"><i class="fas fa-bars fa-lg"></i></a> </nav>
+<nav> <a id="tab" onClick="fn();"><i class="fas fa-bars fa-lg"></i></a><span id="navs" class="hide">
+	<a href="index.html" class="active">回網站首頁</a> <a href="about.html">關於蒂莫絲</a> <a href="service.html">客房的服務</a> <a href="location.html">我們的位置</a> <a  href="contact.html">聯絡蒂莫絲</a> </span> </nav>
 <div id="banner"> </div>
 <div id="main">
   <div id="content">

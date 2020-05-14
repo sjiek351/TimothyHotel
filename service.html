@@ -3,14 +3,74 @@
 <head>
 <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Timothy Hotel 首頁</title>
+<title>Timothy Hotel 客房的服務</title>
 	<link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="js/lightbox2-2.11.1/dist/css/lightbox.css">
+	
 <link href="layout.css" rel="stylesheet" type="text/css">
 	<style>
 		#banner{
 			background-image: url("images/banner/banner3.png");
 		}
+		
+		figure{
+			float: left;
+			width: 30.33%;
+			margin:1.5%;
+			position: relative;	
+		}
+		
+		figure a img{
+			width: 100%;
+			border-radius: 40px 0px;
+			transition: 1s;				
+		}
+		
+		figcaption{
+			text-align: center;
+		}
+		
+		figure a img:hover{
+			box-shadow: 0 0 10px 7px #a5492d;
+		}
+		
+		figure .crown{
+			position: absolute;
+			top:-40px;
+			right: 0;
+			transform: rotate(25deg);
+			transform-origin: 50% 85%;
+			animation-name: crownAni;
+			animation-duration:1.5s;
+			animation-iteration-count: infinite;
+		}
+		
+		@keyframes crownAni{
+			50%{transform: rotate(35deg);};
+		}
+		
+		@media screen and (max-width:767px){
+			figure{
+			width: 90%;
+			margin: 3% 5%;	
+			}
+			
+			element.style {
+			max-width: 90vw;
+			}
+		}
 	</style>
+	
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			
+		});
+		function fn(){
+			$("#navs").toggleClass("hide");
+			  $("#navs").toggleClass("show");
+			  }
+	</script>
 </head>
 
 <body>
@@ -18,8 +78,10 @@
   <p>Traditionally Royal hotel</p>
 </header>
 	
-<nav> <a href="index.html">回網站首頁</a> <a href="about.html">關於蒂莫絲</a> <a href="service.html" class="active">客房的服務</a> <a href="location.html">我們的位置</a> <a href="contact.html">聯絡蒂莫絲</a> 
-	
+<nav>
+	<a id="tab" onClick="fn();"><i class="fas fa-bars fa-lg"></i></a><span id="navs" class="hide">
+	<a href="index.html">回網站首頁</a> <a href="about.html">關於蒂莫絲</a> <a href="service.html" class="active">客房的服務</a> <a href="location.html">我們的位置</a> <a href="contact.html">聯絡蒂莫絲</a> </span>
+	 
 	</nav>
 	
 	
@@ -31,7 +93,103 @@
 	<div id="content">
 	
 	<h1>客房的服務</h1>
+		
+		<figure>
+		<a href="images/room_b/room1.jpg" data-lightbox="roadtrip">
+			<img src="images/room_s/room1.jpg" alt=""></a>
+			<figcaption>客房01</figcaption>
+		</figure>
+		
+		<figure>
+		<a href="images/room_b/room2.jpg" data-lightbox="roadtrip">
+			<img src="images/room_s/room2.jpg" alt=""></a>
+			<figcaption>客房02</figcaption>
+			<img class="crown" src="images/crown.png" alt="">
+		</figure>
+		
+		<figure>
+		<a href="images/room_b/room3.jpg" data-lightbox="roadtrip">
+			<img src="images/room_s/room3.jpg" alt=""></a>
+			<figcaption>客房03</figcaption>
+		</figure>
+		
+		<figure>
+		<a href="images/room_b/room4.jpg" data-lightbox="roadtrip">
+			<img src="images/room_s/room4.jpg" alt=""></a>
+			<figcaption>客房04</figcaption>
+		</figure>
+		
+		<figure>
+		<a href="images/room_b/room5.jpg" data-lightbox="roadtrip">
+			<img src="images/room_s/room5.jpg" alt=""></a>
+			<figcaption>客房05</figcaption>
+		</figure>
+		
+		<figure>
+		<a href="images/room_b/room6.jpg" data-lightbox="roadtrip">
+			<img src="images/room_s/room6.jpg" alt=""></a>
+			<figcaption>客房06</figcaption>
+			<img class="crown" src="images/crown.png" alt="">
+		</figure>
+		
+		<figure>
+		<a href="images/room_b/room7.jpg" data-lightbox="roadtrip">
+			<img src="images/room_s/room7.jpg" alt=""></a>
+			<figcaption>客房07</figcaption>
+		</figure>
+		
+		<figure>
+		<a href="images/room_b/room8.jpg" data-lightbox="roadtrip">
+			<img src="images/room_s/room8.jpg" alt=""></a>
+			<figcaption>客房08</figcaption>
+		</figure>
+		
+		<figure>
+		<a href="images/room_b/room9.jpg" data-lightbox="roadtrip">
+			<img src="images/room_s/room9.jpg" alt=""></a>
+			<figcaption>客房09</figcaption>
+		</figure>
+		
+		<figure>
+		<a href="images/room_b/room10.jpg" data-lightbox="roadtrip">
+			<img src="images/room_s/room10.jpg" alt=""></a>
+			<figcaption>客房10</figcaption>
+		</figure>
+		
+		<figure>
+		<a href="images/room_b/room11.jpg" data-lightbox="roadtrip">
+			<img src="images/room_s/room11.jpg" alt=""></a>
+			<figcaption>客房11</figcaption>
+		</figure>
+		
+		<figure>
+		<a href="images/room_b/room12.jpg" data-lightbox="roadtrip">
+			<img src="images/room_s/room12.jpg" alt=""></a>
+			<figcaption>客房12</figcaption>
+			<img class="crown" src="images/crown.png" alt="">
+		</figure>
+		
+		<figure>
+		<a href="images/room_b/room13.jpg" data-lightbox="roadtrip">
+			<img src="images/room_s/room13.jpg" alt=""></a>
+			<figcaption>客房13</figcaption>
+		</figure>
+		
+		<figure>
+		<a href="images/room_b/room14.jpg" data-lightbox="roadtrip">
+			<img src="images/room_s/room14.jpg" alt=""></a>
+			<figcaption>客房14</figcaption>
+		</figure>
+		
+		<figure>
+		<a href="images/room_b/room15.jpg" data-lightbox="roadtrip">
+			<img src="images/room_s/room15.jpg" alt=""></a>
+			<figcaption>客房15</figcaption>
+		</figure>
+		
+		
       </div>
+	
   <aside>
 	  <img src="images/h2img.png" alt="">
 	  <h2>優美的環境●愉快的渡假</h2>
@@ -46,6 +204,7 @@
   <p>網站設計練習用,如有侵權請告知即刻刪除<br />
     Copyright &copy; Tsuei Yong-Yun</p>
 </footer>
+	<script type="text/javascript" src="js/lightbox2-2.11.1/dist/js/lightbox-plus-jquery.js"></script>
 </body>
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600&display=swap" rel="stylesheet">
 </html>

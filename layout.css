@@ -81,7 +81,7 @@ nav a#tab{
 #main{
 	background-image: url("images/main_bg.png");
 	background-position: center;
-	height:730px; 
+	 
 	width: 93vw;
 	margin: 10px auto 0 auto;
 /*
@@ -91,14 +91,20 @@ nav a#tab{
 	-o-box-shadow: 0 0 5px rgba(0,0,0,0.5);
 */
 	box-shadow: 0 0 5px rgba(0,0,0,0.5);
-	overflow-y: hidden;
+
+}
+
+#main:after{ 
+	content: "";
+	display: block;
+	clear: both;
 }
 
 #content{
-	width: 900px;
+	width: 940px;
 	max-width: 75vw;
 	float: left;
-	margin: 20px;
+    margin: auto;
 }
 
 #content h1{
@@ -138,7 +144,7 @@ footer{
 	width: 100vw;
 	height: 9vh;
 	text-align: center;
-	bottom: 0;
+	
 	background-repeat: repeat-x;
 	
 }
@@ -157,33 +163,31 @@ footer{
 	}
 	
 	#main{
-	background: white;
-		position: relative;
-		
-	
+	background: white;			
 	}
 	
 	#main #content{
 		max-width: 100%;
-	position: absolute;
-		top:0;
-		left: 0;
-		right: 0;
-		margin: auto;
 	}
 		
 }
 
 @media screen and (max-width:767px){
-	nav a{
+	.hide{
 		display: none;
-	}
+}
 	
 	nav a#tab{
 		display: inline-block!important; 
 	}
-	#main{
-		max-height: 100vw;
+	
+	nav a{
+		background-color: #624d2d;
+		width: 100vw;
+	}
+
+	.show{
+		display: block;
 	}
 }
 

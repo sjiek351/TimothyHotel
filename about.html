@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Timothy Hotel 首頁</title>
+<title>Timothy Hotel 關於蒂莫絲</title>
 	<link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
 <link href="layout.css" rel="stylesheet" type="text/css">
 	
@@ -12,8 +12,21 @@
 			background-image: url("images/banner/banner2.png");
 			background-position: center -200px;
 		}
+		iframe{
+			display: block;
+			margin: 5vh auto;
+		}
 	</style>
-	
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			
+		});
+		function fn(){
+			$("#navs").toggleClass("hide");
+			  $("#navs").toggleClass("show");
+			  }
+	</script>
 </head>
 
 <body>
@@ -21,7 +34,8 @@
   <p>Traditionally Royal hotel</p>
 </header>
 	
-<nav> <a href="index.html">回網站首頁</a> <a href="about.html" class="active">關於蒂莫絲</a> <a href="service.html">客房的服務</a> <a href="location.html">我們的位置</a> <a href="contact.html">聯絡蒂莫絲</a> 
+<nav> <a id="tab" onClick="fn();"><i class="fas fa-bars fa-lg"></i></a><span id="navs" class="hide">
+	<a href="index.html">回網站首頁</a> <a href="about.html" class="active">關於蒂莫絲</a> <a href="service.html">客房的服務</a> <a href="location.html">我們的位置</a> <a href="contact.html">聯絡蒂莫絲</a> </span>
 	
 	</nav>
 	
@@ -34,6 +48,9 @@
 	<div id="content">
 	
 	<h1>關於蒂莫絲</h1>
+		
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/aG7m3FhVHjI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		
       </div>
   <aside>
 	  <img src="images/h2img.png" alt="">
