@@ -1,0 +1,31 @@
+Adobe CC 新增功能
+
+Adobe 公司 針對 Adobe Creative Suite 系列軟體升級為 CC 2014 版本，以下介紹有關 Web Design 系列軟體的新功能。Adobe 公司 針對 Adobe Creative Suite 系列軟體升級為 CC 2014 版本，以下介紹有關 Web Design 系列軟體的新功能。Adobe 公司 針對 Adobe Creative Suite 系列軟體升級為 CC 2014 版本，以下介紹有關 Web Design 系列軟體的新功能。Adobe 公司 針對 Adobe Creative Suite 系列軟體升級為 CC 2014 版本，以下介紹有關 Web Design 系列軟體的新功能。Adobe 公司 針對 Adobe Creative Suite 系列軟體升級為 CC 2014 版本，以下介紹有關 Web Design 系列軟體的新功能。
+
+【New】Dreamweaver新增功能：
+
+新的歡迎畫面
+
+工作區的變更
+
+CSS 設計工具增強功能
+
+即時檢視編輯的增強功能
+
+流變格線文件的變更
+
+Extract 面板的增強功能
+
+新的初學者範本
+
+【New】Flash新增功能：
+
+HTML5 Canvas 輸出最佳化
+
+音效分割
+
+自訂平台支援 SDK 中的遮色片支援
+
+動畫導引線
+
+自訂筆刷
