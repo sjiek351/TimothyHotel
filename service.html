@@ -69,6 +69,8 @@
 		function fn(){
 			$("#navs").toggleClass("hide");
 			  $("#navs").toggleClass("show");
+			$(".fa-bars").toggleClass("hide");
+			$(".fa-times").toggleClass("hide");
 			  }
 	</script>
 </head>
@@ -79,7 +81,7 @@
 </header>
 	
 <nav>
-	<a id="tab" onClick="fn();"><i class="fas fa-bars fa-lg"></i></a><span id="navs" class="hide">
+	<a id="tab" onClick="fn();"><i class="fas fa-bars fa-lg"></i><i class="fas fa-times fa-lg hide"></i></a><span id="navs" class="hide">
 	<a href="index.html">回網站首頁</a> <a href="about.html">關於蒂莫絲</a> <a href="service.html" class="active">客房的服務</a> <a href="location.html">我們的位置</a> <a href="contact.html">聯絡蒂莫絲</a> </span>
 	 
 	</nav>

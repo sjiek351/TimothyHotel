@@ -18,7 +18,9 @@
   });
 	function fn(){
 			$("#navs").toggleClass("hide");
-			  $("#navs").toggleClass("show");
+			 $("#navs").toggleClass("show");
+			$(".fa-bars").toggleClass("hide");
+			$(".fa-times").toggleClass("hide");
 			  }
 </script>
 	<style>
@@ -39,7 +41,7 @@
 <header> <img src="images/logo.png" alt="">
   <p>Traditionally Royal hotel</p>
 </header>
-<nav> <a id="tab" onClick="fn();"><i class="fas fa-bars fa-lg"></i></a><span id="navs" class="hide">
+<nav> <a id="tab" onClick="fn();"><i class="fas fa-bars fa-lg"></i><i class="fas fa-times fa-lg hide"></i></a><span id="navs" class="hide">
 	<a href="index.html" class="active">回網站首頁</a> <a href="about.html">關於蒂莫絲</a> <a href="service.html">客房的服務</a> <a href="location.html">我們的位置</a> <a  href="contact.html">聯絡蒂莫絲</a> </span> </nav>
 <div id="banner"> </div>
 <div id="main">
