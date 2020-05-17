@@ -178,12 +178,9 @@ footer{
 	background: white;			
 	}
 	
-/*
 	#main #content{
 		max-width: 100%;
-		float: none;
 	}		
-*/
 }
 
 @media screen and (max-width:767px){	
