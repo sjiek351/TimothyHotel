@@ -2,23 +2,57 @@
 <html>
 <head>
 <meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>Timothy Hotel 關於蒂莫絲</title>
-	<link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
 <link href="layout.css" rel="stylesheet" type="text/css">
+<style>
+#banner {
+    background-image: url("images/banner/banner2.png");
+    background-position: center -200px;
+}
+
+	#aboutList{
+		padding:0 20px; 
+	}
 	
-	<style>
-		#banner{
-			background-image: url("images/banner/banner2.png");
-			background-position: center -200px;
-		}
-		iframe{
-			display: block;
-			margin: 5vh auto;
-		}
-	</style>
-	<script src="js/jquery-3.3.1.min.js"></script>
-	<script>
+#aboutList h2 {
+    background-color: #dfdfdf;
+	cursor:pointer;
+	margin-bottom: 5px; 
+	font-size: 20px; 
+}
+	
+	#aboutList h2 img {
+    vertical-align: middle; 
+  }
+	
+	#aboutList div {
+    text-align: justify;                
+    display: none;     
+  }
+	
+	#aboutList p{
+		padding: 20px 0;
+		text-indent: 2.2em;
+	}
+	
+	#aboutList ol{
+		padding-top: 20px; 
+	}
+	
+	#aboutList ol {
+		margin-left: 20px;
+	}
+	
+iframe {
+    display: block;
+    margin: 5vh auto;
+}
+</style>
+<script src="js/jquery-3.3.1.min.js"></script> 
+<script src="js/TSaccordion.js"></script> 
+<script>
 		$(document).ready(function(){
 			
 		});
@@ -33,39 +67,43 @@
 <header> <img src="images/logo.png" alt="">
   <p>Traditionally Royal hotel</p>
 </header>
-	
-<nav> <a id="tab" onClick="fn();"><i class="fas fa-bars fa-lg"></i></a><span id="navs" class="hide">
-	<a href="index.html">回網站首頁</a> <a href="about.html" class="active">關於蒂莫絲</a> <a href="service.html">客房的服務</a> <a href="location.html">我們的位置</a> <a href="contact.html">聯絡蒂莫絲</a> </span>
-	
-	</nav>
-	
-	
-<div id="banner">
-  
-</div>
-	
+<nav> <a id="tab" onClick="fn();"><i class="fas fa-bars fa-lg"></i></a><span id="navs" class="hide"> <a href="index.html">回網站首頁</a> <a href="about.html" class="active">關於蒂莫絲</a> <a href="service.html">客房的服務</a> <a href="location.html">我們的位置</a> <a href="contact.html">聯絡蒂莫絲</a> </span> </nav>
+<div id="banner"> </div>
 <div id="main">
-	<div id="content">
-	
-	<h1>關於蒂莫絲</h1>
-		
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/aG7m3FhVHjI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		
+  <div id="content">
+    <h1>關於蒂莫絲</h1>
+    <div id="aboutList">
+      <h2><img src="images/aboutListIcon.png" alt=""> 蒂莫絲介紹</h2>
+      <div>
+        <p>飯店，又稱旅店、賓館，是提供安全、舒適，令利用者得到短期的休息或睡眠空間之商業機構。現在的飯店，除主要為遊客提供住宿服務外，亦提供生活的服務及設施（寢前服務）、餐飲、遊戲、娛樂、購物、商務中心、宴會及會議等設施。</p>
       </div>
-  <aside>
-	  <img src="images/h2img.png" alt="">
-	  <h2>優美的環境●愉快的渡假</h2>
-	  <img class="adimg" src="images/aside_area/about_1.jpg" alt="">
-	  <img class="adimg" src="images/aside_area/about_2.jpg" alt="">
-	  <img class="adimg" src="images/aside_area/about_3.jpg" alt="">
-	</aside>
-  
+      <h2><img src="images/aboutListIcon.png" alt=""> 服務及設施</h2>
+      <div>
+        <p>飯店房間的基本設備包括床、衣櫃、沙發、茶几、一般亦設有電話、電視、鬧鐘；並有冰箱，內有各種飲料、酒類及小食，全部需額外收費（有飯店例外），在結帳時繳付。房間亦備有熱水瓶（或電熱水壺）、水杯及即溶咖啡、茶包、奶精、砂糖等供住客免費使用。除了十分便宜的飯店外，房內通常都設有獨立浴室，內有坐廁、浴缸及淋浴設備。現在越來越多飯店設有WIFI及網際網路接駁服務，採免費或需額外收費。</p>
+      </div>
+      <h2><img src="images/aboutListIcon.png" alt=""> 住宿須知</h2>
+      <div>        
+        <ol>
+          <li> 進房時間：當日下午三點以後。</li>
+          <li> 退房時間：翌日上午十一點以前。</li>
+          <li> 請勿攜帶寵物進入，若需安置寵物，請與櫃檯人員聯絡。</li>
+          <li> 全館禁菸。</li>
+        </ol>            
+      </div>	  
+    </div>
+	<div class="iframe-container">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/aG7m3FhVHjI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+  </div>
+  <aside> <img src="images/h2img.png" alt="">
+    <h2>優美的環境●愉快的渡假</h2>
+    <img class="adimg" src="images/aside_area/about_1.jpg" alt=""> <img class="adimg" src="images/aside_area/about_2.jpg" alt=""> <img class="adimg" src="images/aside_area/about_3.jpg" alt=""> </aside>
 </div>
-	
 <footer>
   <p>網站設計練習用,如有侵權請告知即刻刪除<br />
     Copyright &copy; Tsuei Yong-Yun</p>
 </footer>
 </body>
-	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600&display=swap" rel="stylesheet">
 </html>

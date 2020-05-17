@@ -112,7 +112,22 @@ nav a#tab{
 	background-position: center center;
 	background-size: auto;
 	text-align: center;
-	margin:7px auto;
+	margin:7px auto 15px auto;
+}
+
+.iframe-container {
+position: relative;
+padding-bottom: 60%;
+height: 0;
+}
+
+.iframe-container iframe{
+	position: absolute;
+	top: 0;
+	left: 10%;
+	right: 10%;
+	width: 80%;
+	height: 80%;
 }
 
 aside{
@@ -155,8 +170,7 @@ footer{
 	}
 }
 
-@media screen and (max-width:1270px){
-	
+@media screen and (max-width:1270px){	
 	aside{
 		display:none;
 	}
@@ -167,20 +181,11 @@ footer{
 	
 	#main #content{
 		max-width: 100%;
-	}
-		
+		float: none;
+	}		
 }
 
-@media screen and (max-width:767px){
-	header p{
-/*
-	max-height:15px; 
-	font-size: 13px;
-	letter-spacing: 1px;
-	word-spacing: 1em;
-*/
-}
-	
+@media screen and (max-width:767px){	
 	.hide{
 		display: none;
 }
@@ -196,6 +201,12 @@ footer{
 
 	.show{
 		display: block;
+	}
+	
+	.iframe-container iframe{
+		left: 5%;
+		right: 5%;
+		width: 90%;
 	}
 }
 

@@ -19,16 +19,18 @@
 		function fn(){
 			$("#navs").toggleClass("hide");
 			  $("#navs").toggleClass("show");
+			$(".fa-bars").toggleClass("hide");
+			$(".fa-times").toggleClass("hide");
 			  }
 	</script>
 </head>
 
 <body>
-<header> <img src="images/logo.png" alt="">
-  <p>Traditionally Royal hotel</p>
+<header> <img src="images/logo.png" >
+	<p>Traditionally Royal Hotel</p>
 </header>
 	
-<nav> <a id="tab" onClick="fn();"><i class="fas fa-bars fa-lg"></i></a><span id="navs" class="hide">
+<nav> <a id="tab" onClick="fn();"><i class="fas fa-bars fa-lg"></i><i class="fas fa-times fa-lg hide"></i></a><span id="navs" class="hide">
 	<a href="index.html">回網站首頁</a> <a href="about.html">關於蒂莫絲</a> <a href="service.html">客房的服務</a> <a href="location.html" class="active">我們的位置</a> <a href="contact.html">聯絡蒂莫絲</a></span> 
 	
 	</nav>
@@ -41,7 +43,9 @@
 <div id="main">
 	<div id="content">
 	
-	<h1>我們的位置</h1>
+		<h1>我們的位置</h1>
+		<div class="iframe-container">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57831.97281720366!2d121.51483182067443!3d25.051094589379577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abe81eb85771%3A0x682251d5c6f37a58!2z5Y-w5YyX5bCP5beo6JuL!5e0!3m2!1szh-TW!2stw!4v1589735374210!5m2!1szh-TW!2stw" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
       </div>
   <aside>
 	  <img src="images/h2img.png" alt="">
